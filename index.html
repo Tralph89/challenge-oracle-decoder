@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Encriptador de texto</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="imagenlogo">
+            <img class="logo" src="img/Vectorlogo.png">
+        </div>
+
+        <div class="areamensaje">
+
+            <textarea autofocus="on" placeholder="Ingrese el texto aqui" class="text"  rows:10 cols:1></textarea>
+
+            <div class="buttons">
+                <button class="encriptar">Encriptar</button>
+                <button class="desencriptar">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="areaencriptado" id="areaencriptado" >   
+            
+                <div class="muneco" id="muneco">
+                    <img src="img/muneco.png">
+                </div>
+        
+                    <p class="ningunmensaje">Ningún mensaje fue encontrado</p>
+                    <p class="ingresatexto">Ingresa el texto que desees encriptar o desencriptar</p>
+                
+        </div>
+        <div class="areacifrado" id="areacifrado">
+                <textarea readonly="readonly" id="mensajecifrado"></textarea>
+                <button class="copiar" id="copiar">Copiar</button>
+        </div>
+    
+    <footer>
+        <a href="https://github.com/Tralph89"><img src="/img/github-logo.png" alt="logo de github"></a>
+        <a href="https://www.linkedin.com/in/rafaleyvag/"><img src="/img/Linkedin-logo.png" alt="logo de linkedin"></a>
+        <p>Desarrollado por Rafael Leyva</p>
+    </footer>
+</div>
+
+<script src="/script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,235 @@
+
+/* Encriptador - 1 Desktop */
+*	{
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(56deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+.contenedor {
+	position: relative;
+	width: 90%;
+	height: 90%;
+	background: #F3F5FC;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+	border-radius: 36px;
+}
+
+.logo	{
+	position: fixed;
+	margin: 40px;
+	display: block;
+	width: 2%;
+	height: auto;
+
+}
+
+.areamensaje	{
+	margin: 40px;
+	width: 60%;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.text {
+	position: relative;
+	width: 100%;
+	height: 60%;
+	left: 0px;
+	top: 60px;
+	border: none;
+	background-color: #F3F5FC;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 100%;
+	color: #0A3871;	
+	resize: none;
+    text-transform: lowercase;
+}
+
+.text::placeholder	{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight:300;
+	font-size: 2rem;
+	line-height: 100%;
+	color: #0A3871;
+	opacity: 80%;
+    text-transform:none;
+}
+
+textarea:focus	{
+	outline: none;
+}
+
+.buttons	{
+	position: relative;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap:30px;
+}
+
+.encriptar{
+	width: 328px;
+	height: 67px;
+	background-color: #0A3871;
+	border: 1px solid #0A3871;
+	border-radius: 24px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 19px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.desencriptar{
+	width: 328px;
+	height: 67px;
+	background-color: #FFF;
+	border: 1px solid #0A3871;
+	border-radius: 24px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 19px;
+	text-align: center;
+	color: #0A3871;
+}
+
+.areaencriptado	{
+	position: relative;
+	width: 30%;
+	height: 95%;
+	margin: 0;
+	background: #FFFFFF;
+	border-top-right-radius: 32px;
+	border-bottom-right-radius: 32px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.muneco img	{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.ningunmensaje	{
+	width: auto;
+	height: auto;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
+	text-align: center;
+	color: #343A40;
+}
+
+.ingresatexto	{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	color: #495057;
+	margin-bottom: 20px;
+}
+
+.areacifrado	{
+	position: relative;
+	width: 30%;
+	height: 95%;
+	margin: 0;
+	background: #FFFFFF;
+	border-top-right-radius: 32px;
+	border-bottom-right-radius: 32px;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.copiar{
+	width: 80%;
+	height: 67px;
+	background-color: #FFF;
+	border: 1px solid #0A3871;
+	border-radius: 24px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 19px;
+	text-align: center;
+	color: #0A3871;
+	margin: 30px auto;
+	position: relative;
+}
+
+#mensajecifrado {
+	position: relative;
+	width: 90%;
+	height: 70%;
+	left: 20px;
+	top: 40px;
+	color: #0A3871;
+	border: none;
+	background-color: #FFF;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 150%;
+	color: #0A3871;	
+	resize: none;
+    text-transform: lowercase;
+}
+
+footer{
+	background: linear-gradient(56deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	bottom: 5%;
+	height: 40px;
+	width: 90%;
+	text-align: center;
+	border-bottom-left-radius: 32px;
+	border-bottom-right-radius: 32px;
+}
+
+footer img	{
+	height: 20px;
+	margin: auto 10px;
+}
+
+footer p{
+	color: #F3F5FC;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+}
